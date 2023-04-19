@@ -1,0 +1,382 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* height: 2000px; */
+    min-height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+navbar {
+    z-index: 20000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: xx-large;
+    display: flex;
+    background-color: goldenrod;
+    justify-content:space-around;
+    align-items: center;
+    height: 10svh;
+    width: 100%;
+    border-style: none;
+    border-color: black;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+
+}
+
+.headline{
+    z-index: 10000;
+    padding: 5px;
+    font-size: xx-large;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(27, 26, 26);
+    margin-bottom: 0;
+}
+
+.nameBlock{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+
+}
+
+.mainLink{
+    font-size: xxx-large;
+    color: black;
+    text-decoration: none;
+    transition: 300ms;
+
+}
+
+.mainLink:hover{
+    opacity: 90%;
+}
+
+.catalogLink{
+    font-size: xx-large;
+    color: black;
+    text-decoration: none;
+    transition: 300ms;
+    margin: 0;
+}
+
+.catalogLink:hover{
+    opacity: 90%;
+}
+
+
+
+
+
+.bannerWraper{
+    background: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.banner{
+    height: 90svh;
+    filter: brightness(25%);
+    
+
+}
+
+.bannerTextWrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.bannerText, .splitterTitle{
+    margin: 0;
+    font-size: xxx-large;
+    color: goldenrod;
+    text-decoration: none;
+    background: none;
+    text-align: center;
+    
+    /* position: absolute;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+.bannerSubText, .splitterText{
+    margin: 0;
+    font-size: xx-large;
+    color: whitesmoke;
+    text-decoration: none;
+    background: none;
+    text-align: center;
+    align-self: center;
+    font-family: 'Roboto';
+}
+
+
+
+
+/* -----СПЛИТЕР---------------------- */
+.bannerSplitter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2vw;
+    background-color: rgb(232, 231, 231);
+    align-self: center
+}
+
+.splitterTitle{
+    margin-top: 5vh;
+}
+
+.splitterText{
+    margin-top: 5vh;
+    margin-bottom: 15vh;    
+    color: black;
+    font-family: 'Roboto';
+    text-align: center;
+
+}
+
+
+
+
+/* -----КОНТАКТЫ-------------------------------- */
+.contactSplitter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    row-gap: 2vw;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 50px;
+}
+
+.piramidHead{
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.piramidBase{
+    margin-top: 20px;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.contactSplitterTitle{
+    text-align: center;
+    font-size: xxx-large;
+    color: goldenrod;
+}
+
+.contactSplitterText{
+    text-align: center;
+    margin: 5vh;
+    font-size: x-large;
+    font-family: 'Roboto';
+}
+
+.contactWrapper{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.contactElementWrapper{
+    /* margin-right: 100px; */
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr; */
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contactElementTitle{
+    font-family: 'Roboto';
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.contactElementImage{
+    width: 5vw;
+}
+
+.contactElementText{
+    color: goldenrod;
+    font-size: x-large;
+}
+
+.button{
+    background-color: goldenrod;
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+footer{
+    /* flex: 0 0 100% */
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top:auto;
+    background-color: rgb(63, 63, 63);
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: x-large;
+}
+
+.footWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    width: 70%;
+    padding: 10px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: x-large;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    navbar {
+        height: 5svh;
+    }
+    .splitterTitle{
+        margin-top: 2vh;
+    }
+    .splitterText{
+        margin-top: 2vh;
+        margin-bottom: 5vh;    
+    }
+    .bannerWrapper{
+        margin-bottom: 10vh;
+    }
+
+    .banner{
+        height: 22vh;
+    }
+    .bannerText{
+        margin-top: -12vh;
+        margin-bottom: -1vh;
+    }
+    .bannerSubText{
+        width: 80%;
+        margin-bottom: -11vh;
+    }
+
+    .contactElementImage{
+        width: 150px;
+    }
+    .contactElementText, .contactElementTitle{
+        font-size: xx-large;
+    }
+    .contactSplitterTitle{
+        font-size: 80px;
+    }
+    .contactElementWrapper{
+        margin-top: 50px;
+    }
+    .piramidBase{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    navbar {
+        height: 10svh;
+    }
+    .splitterTitle{
+        margin-top: 5vh;
+    }
+    .splitterText{
+        margin-top: 5vh;
+        margin-bottom: 15vh; 
+    }
+    .bannerWrapper{
+        margin-bottom: 0;
+    }
+
+    .banner{
+        height: 90vh;
+    }
+    .bannerText{
+        margin: 0;
+    }
+    .bannerSubText{
+        width: 100%;
+        margin: 0;
+    }
+    .contactElementImage{
+        width: 5vw;
+    }
+    .contactElementText, .contactElementTitle{
+        font-size: x-large;
+    }
+    .contactSplitterTitle{
+        font-size: 50px;
+    }
+    .piramidBase{
+        width: 50%;
+    }
+
+}

@@ -1,0 +1,56 @@
+.sub{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main{
+    margin-bottom: 50px;
+}
+
+.priceLayout wrap h2, .priceLayout div p{
+    margin-top: 0;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.priceLayout h2{
+    font-weight: 100;
+    font-size: xxx-large;
+}
+
+.priceLayout{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+table, th, tbody, td{
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    border-collapse: collapse;
+    width: fit-content;
+    background-color: rgb(237, 237, 237);
+    align-self: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    table, th, tbody, td {
+        font-size: xx-large;
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    table, th, tbody, td {
+        font-size: large;
+    }
+} 

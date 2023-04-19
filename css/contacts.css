@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+.contactWrapper{
+    width: 100%;
+    height: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .contactElementImage{
+        width: 20vw;
+        
+    }
+    .contactWrapper{
+        grid-template-columns: 1fr;
+        row-gap: 5vh;
+    }
+    .contactElementTitle{
+        font-size: xxx-large;
+        margin-bottom: 1vh;
+    }
+    .contactElementText{
+        font-size: xxx-large;
+    }
+    .contactSplitterText{
+        font-size: xx-large;
+    }
+    .contactSplitter{
+        margin-bottom: 300px;
+    }
+    .contactSplitterTitle{
+        font-size: 80px;
+    }
+
+} 
+
+@media only screen and (min-width: 992px) {
+    .contactElementImage{
+        width: 5vw;
+    }
+    .contactElementImage{
+        width: 30%;
+        
+    }
+    .contactWrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contactElementTitle{
+        font-size: x-large;
+        margin-bottom: 1vh;
+    }
+    .contactElementText{
+        font-size: x-large;
+    }
+    .contactSplitterText{
+        font-size: x-large;
+    }
+    .contactSplitter{
+        padding-bottom: 10px;
+        margin-bottom: 100px;
+    }
+    .contactElementImage{
+        width: 5vw;
+    }
+    .contactSplitterTitle{
+        font-size: 50px;
+    }
+} 
